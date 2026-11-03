@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Student Registration Form</title>
+    </head>
+    <body>
+        <img src="aiub.jpg" id="logo">
+        <br>
+
+        <h1>Student Registration Form</h1>
+        <form>
+            <fieldset>
+                <legend>Student Information</legend>
+                <table>
+                    <tr>
+                        <td><label for="StudentName">Student Name: </label></td>
+                        <td><input type="text" name="StudentName" id="StudentName" placeholder="Enter Your Name"><p id="NameError"></p></td>
+                    </tr>
+                    <tr>
+                        <td><label for="StudentID">Student ID: </label></td>
+                        <td><input type="text" name="StudentID" id="StudentID" placeholder="Enter Your ID"><p id="IDError"></p></td>
+                    </tr>
+                    <tr>
+                        <td><label for="StudentEmail">Student Email: </label></td>
+                        <td><input type="email" name="StudentEmail" id="StudentEmail" placeholder="Enter Your Email"><p id="EmailError"></p></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+
+            <input type="submit" id="submit" value="Register">
+            <input type="reset" id="reset">
+        </form>
+        <script src="validation.js"></script>
+    </body>
+</html>
