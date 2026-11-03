@@ -150,3 +150,10 @@ input[type="reset"]{
 #reset:hover{
     background-color: skyblue;
 }
+.buttons{
+    text-align: center;
+}
+#submit, #reset{
+    width: 25%;
+    margin: 0 10px;
+}
