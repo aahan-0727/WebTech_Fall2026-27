@@ -36,6 +36,37 @@
                         <p id="PhoneError"></p>
                     </td>
                 </tr>
-
+                <tr>
+                    <td><label>Gender:</label></td>
+                    <td>
+                        <input type="radio" name="AdminGender" id="Male" value="Male">Male
+                        <input type="radio" name="AdminGender" id="Female" value="Female">Female
+                        <input type="radio" name="AdminGender" id="Other" value="Other">Other
+                        <p id="GenderError"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="AdminPassword">Password:</label></td>
+                    <td>
+                        <input type="password" name="AdminPassword" id="AdminPassword" placeholder="Enter Your Passoword">
+                        <p id="PasswordError"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="ConfirmPassword">Confirm Password: </label></td>
+                    <td>
+                        <input type="password" name="ConfirmPassword" id="ConfirmPassword" placeholder="Re-enter Your Passoword">
+                        <p id="ConfirmError"></p>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <div class="buttons">
+            <input type="submit" id="submit" value="Register">
+            <input type="reset" id="reset" value="Reset">
+        </div>
+        <div class="loginlink">Already have an account? <a href="login.html">Login</a></div>
+    </form>
+    <script src="validation.js"></script>
 </body>
 </html>    
