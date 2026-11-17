@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
         form.addEventListener("submit", function (event) {
             event.preventDefault();
             if (validate()) {
-                window.location.href = "AdminLogin.html";
+                window.location.href = "../Login/AdminLogin.html";
             }
         });
     }
@@ -67,7 +67,7 @@ function validate()
         phoneError.innerHTML = "";
     }
 
-    let genders = document.querySelectorAll('input[name="gender"]');
+    let genders = document.querySelectorAll('input[name="AdminGender"]');
     let genderError = document.getElementById("GenderError");
     let selectedGender = "";
     for (let i = 0; i < genders.length; i++)
