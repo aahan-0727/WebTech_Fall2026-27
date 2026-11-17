@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Style.css">
+        <title> Admin Login </title>
+    </head>
+    <body>
+        <div class="logobox">
+            <video src="logo.mp4" poster="logo.png" id="logo" autoplay muted playsinline></video>
+        </div>
+
+        <h1> Admin Login </h1>
+        <form>
+            <fieldset>
+                <legend> Login Information </legend>
+                <table>
+                    <tr>
+                        <td> <label for="AdminEmail"> Email : </label> </td>
+                        <td>
+                            <input type="text" name="AdminEmail" id="AdminEmail" placeholder="Enter Your Email">
+                            <p id="EmailError"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="AdminPassword"> Password : </label> </td>
+                        <td>
+                            <input type="password" name="AdminPassword" id="AdminPassword" placeholder="Enter Password">
+                            <p id="PasswordError"></p>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <!-- shows "wrong email or password" -->
+            <p id="LoginError"></p>
+
+            <div class="buttons">
+                <input type="submit" id="submit" value="Login">
+            </div>
+
+            <div class="loginlink"> Don't have an account? <a href="../Registration/registration.html">Register</a> </div>
+        </form>
+        <script src="login.js"></script>
+    </body>
+</html>

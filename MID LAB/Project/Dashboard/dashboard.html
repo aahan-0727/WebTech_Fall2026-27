@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="dashboard.css">
+        <title> Admin Dashboard </title>
+    </head>
+    <body>
+        <div class="wrapper">
+
+            <!-- ---------- Sidebar ---------- -->
+            <div class="sidebar">
+                <div class="logobox">
+                    <video src="logo.mp4" poster="logo.png" id="logo" autoplay muted playsinline></video>
+                </div>
+                <a href="../Dashboard/dashboard.html" class="active"> Dashboard </a>
+                <a href="#"> Orders </a>
+                <a href="#"> Riders </a>
+                <a href="#"> Customers </a>
+                <a href="../Login/login.html"> Logout </a>
+            </div>
+            <div class="content">
+                <h1> Dashboard </h1>
+                <div class="welcome"> Welcome back, Admin </div>
+
+                <!-- four summary cards in one row -->
+                <div class="cards">
+                    <div class="card total">
+                        <div class="label"> Total Orders </div>
+                        <div class="number"> 1,248 </div>
+                    </div>
+                    <div class="card pending">
+                        <div class="label"> Pending </div>
+                        <div class="number"> 36 </div>
+                    </div>
+                    <div class="card delivered">
+                        <div class="label"> Delivered </div>
+                        <div class="number"> 1,190 </div>
+                    </div>
+                    <div class="card riders">
+                        <div class="label"> Active Riders </div>
+                        <div class="number"> 18 </div>
+                    </div>
+                </div>
+                <fieldset>
+                    <legend> Recent Deliveries </legend>
+                    <table>
+                        <tr>
+                            <th> Order </th>
+                            <th> Customer </th>
+                            <th> Rider </th>
+                            <th> Status </th>
+                        </tr>
+                        <tr>
+                            <td> #1021 </td>
+                            <td> Customer One </td>
+                            <td> Rider One </td>
+                            <td> <span class="chip delivered-chip"> Delivered </span> </td>
+                        </tr>
+                        <tr>
+                            <td> #1022 </td>
+                            <td> Customer Two </td>
+                            <td> Rider Two </td>
+                            <td> <span class="chip transit-chip"> In Transit </span> </td>
+                        </tr>
+                        <tr>
+                            <td> #1023 </td>
+                            <td> Customer Three </td>
+                            <td> Unassigned </td>
+                            <td> <span class="chip pending-chip"> Pending </span> </td>
+                        </tr>
+                        <tr>
+                            <td> #1024 </td>
+                            <td> Customer Four </td>
+                            <td> Rider Three </td>
+                            <td> <span class="chip transit-chip"> In Transit </span> </td>
+                        </tr>
+                        <tr>
+                            <td> #1025 </td>
+                            <td> Customer Five </td>
+                            <td> Rider One </td>
+                            <td> <span class="chip delivered-chip"> Delivered </span> </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,113 @@
+*{
+    box-sizing: content-box;
+}
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: #3b1c2c;
+    background-color: #f6e8ee;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+.logobox{
+    background-color: #ffffff;
+    border: 2px solid #a64d79;
+    border-radius: 10x;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#logo{
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    margin: 0 auto;
+}
+p{
+    color: #c0152f;
+    text-align: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 4px 0 0 0;
+}
+
+fieldset{
+    background-color: #ffffff;
+    border: 2px solid #a64d79;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+legend{
+    background-color: #e8b9cd;
+    font-weight: bold;
+    padding: 12px 10px;
+    border-radius: 10px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+td{
+    padding: 8px 6px;
+    vertical-align: top;
+}
+
+input[type="text"],
+input[type="password"]{
+    width: 90%;
+    padding: 8px 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    border: 1px solid #a64d79;
+    border-radius: 5px;
+    background-color: #fffafc;
+}
+input[type="radio"]{
+    margin: 10px 4px 0 10px;
+    accent-color: #a64d79;
+}
+
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+input[type="submit"],
+input[type="reset"]{
+    flex: 1;
+    padding: 10px 28px;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    background-color: #a64d79;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+    background-color: #7d3659;
+}
+
+.loginlink{
+    text-align: center;
+    margin-top: 16px;
+    font-size: 16px;
+}
+.loginlink a{
+    color: #a64d79;
+    font-weight: bold;
+}
+
+#LoginError{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
