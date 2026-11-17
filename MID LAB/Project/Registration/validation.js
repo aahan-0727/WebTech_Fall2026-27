@@ -12,9 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function validate()
 {
-    let valid = true;   // turns false if ANY check below fails
+    let valid = true;
 
-    // ---------- Name ----------
     let name = document.getElementById("AdminName").value.trim();
     let nameError = document.getElementById("NameError");
     if (name === "")
@@ -32,7 +31,6 @@ function validate()
         nameError.innerHTML = "";
     }
 
-    // ---------- Email ----------
     let email = document.getElementById("AdminEmail").value.trim();
     let emailError = document.getElementById("EmailError");
     let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -51,7 +49,6 @@ function validate()
         emailError.innerHTML = "";
     }
 
-    // ---------- Phone ----------
     let phone = document.getElementById("AdminPhone").value.trim();
     let phoneError = document.getElementById("PhoneError");
     let phonePattern = /^01[3-9]\d{8}$/;
@@ -70,7 +67,6 @@ function validate()
         phoneError.innerHTML = "";
     }
 
-    // ---------- Gender ----------
     let genders = document.querySelectorAll('input[name="gender"]');
     let genderError = document.getElementById("GenderError");
     let selectedGender = "";
@@ -92,7 +88,6 @@ function validate()
         genderError.innerHTML = "";
     }
 
-    // ---------- Password ----------
     let password = document.getElementById("AdminPassword").value;
     let passwordError = document.getElementById("PasswordError");
     if (password === "")
@@ -115,7 +110,6 @@ function validate()
         passwordError.innerHTML = "";
     }
 
-    // ---------- Confirm Password ----------
     let confirm = document.getElementById("ConfirmPassword").value;
     let confirmError = document.getElementById("ConfirmError");
     if (confirm === "")
