@@ -18,7 +18,7 @@ function validate()
     let nameError = document.getElementById("NameError");
     if (name === "")
     {
-        nameError.innerHTML = "Enter The Name";
+        nameError.innerHTML = "Please Enter The Name";
         valid = false;
     }
     else if (name.length < 6)
@@ -80,7 +80,7 @@ function validate()
     }
     if (selectedGender === "")
     {
-        genderError.innerHTML = "Please Select the Gender";
+        genderError.innerHTML = "Please Select The Gender";
         valid = false;
     }
     else

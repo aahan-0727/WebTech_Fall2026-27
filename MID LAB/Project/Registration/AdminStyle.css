@@ -16,7 +16,7 @@ h1{
 }
 
 .logobox{
-    background-color: #ffffff;
+    background-color: transparent;
     border: 0px;
     border-radius: 10x;
     padding: 10px;
@@ -28,6 +28,7 @@ h1{
     max-width: 320px;
     height: auto;
     margin: 0 auto;
+    mix-blend-mode: multiply;
 }
 p{
     color: #c0152f;
