@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         form.addEventListener("submit", function (event) {
             event.preventDefault();
             if (validate()) {
-                window.location.href = "../Dashboard/dashboard.html";
+                window.location.href = "../Dashboard/AdminDashboard.html";
             }
         });
     }

@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
         form.addEventListener("submit", function (event) {
             event.preventDefault();
             if (validate()) {
-                window.location.href = "login.html";
+                window.location.href = "AdminLogin.html";
             }
         });
     }
